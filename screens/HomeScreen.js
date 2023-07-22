@@ -24,15 +24,16 @@ const HomeScreen = () => {
           returnKeyType={"search"}
           enablePoweredByContainer={false}
           onPress={(data, details = null) => {
-            if (!data || !details) {
-              dispatch(
-                setOrigin({
-                  location: details.geometry.location,
-                  description: data.description,
-                })
-              );
-              dispatch(setDestination(null));
-            }
+            const { geometry } = details;
+            console.log(geometry);
+
+            dispatch(
+              setOrigin({
+                location: geometry.location,
+                description: data.description,
+              })
+            );
+            dispatch(setDestination(null));
           }}
           fetchDetails={true}
           placeholder="Where from"

@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  origin: null,
+  origin: {},
   destination: null,
   travelTimeInformation: null,
 };
