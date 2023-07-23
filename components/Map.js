@@ -7,8 +7,8 @@ import { useSelector } from "react-redux";
 
 const Map = () => {
   const origin = useSelector(selectOrigin);
-  console.log(origin?.location?.lat);
-  console.log(origin?.location?.lng);
+  // console.log(origin?.location?.lat);
+  // console.log(origin?.location?.lng);
 
   return (
     <MapView
