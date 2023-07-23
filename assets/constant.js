@@ -12,3 +12,18 @@ export const data = [
     screen: "EatsScreen",
   },
 ];
+
+export const favoritesData = [
+  {
+    id: "123",
+    icon: "home",
+    location: "Home",
+    destination: "Code Street, London, UK",
+  },
+  {
+    id: "444",
+    icon: "briefcase",
+    location: "Work",
+    destination: "Code Street, London, UK",
+  },
+];
