@@ -39,7 +39,7 @@ export const rideOptionsData = [
     id: "Uber-XL-400",
     title: "Uber XL",
     multiplier: "1.2",
-    image: "https://links.papareact.com/3w8",
+    image: "https://links.papareact.com/5w8",
   },
   {
     id: "Uber-LUX-800",
