@@ -20,6 +20,15 @@ const Map = () => {
     });
   }, [origin, destination]);
 
+  useEffect(() => {
+    if (!origin || !destination) return;
+
+    const getTravelTime = async () => {
+      const url = `https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=${origin?.description}&destinations=${destination?.description}&key=${GOOGLE_MAPS_APIKEY}`;
+    };
+    getTravelTime();
+  }, [origin, destination]);
+
   return (
     <MapView
       ref={mapRef}
