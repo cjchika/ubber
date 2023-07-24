@@ -27,3 +27,24 @@ export const favoritesData = [
     destination: "Code Street, London, UK",
   },
 ];
+
+export const rideOptionsData = [
+  {
+    id: "Uber-X-123",
+    title: "UberX",
+    multiplier: "1",
+    image: "https://links.papareact.com/3pn",
+  },
+  {
+    id: "Uber-XL-400",
+    title: "Uber XL",
+    multiplier: "1.2",
+    image: "https://links.papareact.com/3w8",
+  },
+  {
+    id: "Uber-LUX-800",
+    title: "Uber LUX",
+    multiplier: "1.75",
+    image: "https://links.papareact.com/7pf",
+  },
+];

@@ -4,11 +4,13 @@ import {
   View,
   SafeAreaView,
   TouchableOpacity,
+  FlatList,
 } from "react-native";
 import React from "react";
 import tw from "tailwind-react-native-classnames";
 import { Icon } from "react-native-elements";
 import { useNavigation } from "@react-navigation/native";
+import { rideOptionsData } from "../assets/constant";
 
 const RideOptionCard = () => {
   const navigation = useNavigation();
@@ -23,6 +25,16 @@ const RideOptionCard = () => {
         </TouchableOpacity>
         <Text style={tw`text-center py-5 text-xl`}>Select a Ride</Text>
       </View>
+
+      <FlatList
+        data={rideOptionsData}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => (
+          <TouchableOpacity>
+            <Text>Cars</Text>
+          </TouchableOpacity>
+        )}
+      />
     </SafeAreaView>
   );
 };
